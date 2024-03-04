@@ -1,0 +1,19 @@
+<!-- app/views/questions/answer.html.erb -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="answer-container">
+        <h2>Your Question:</h2>
+        <p><%= params[:ask] %></p>
+
+        <h2>Coach's Answer:</h2>
+        <p><%= @answer %></p>
+
+        <!-- Backlink to /ask -->
+        <%= link_to "Ask another question", ask_path, class: "btn btn-primary mt-3" %>
+      </div>
+    </div>
+  </div>
+</div>
+
